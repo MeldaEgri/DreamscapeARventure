@@ -18,7 +18,8 @@ const Slider: React.FC = () => {
 
         <View style={styles.main}>
 <Image
-source={require('../../assets/images/screens/backgraunimg.png')}
+source={require('../../assets/images/screens/backgraounimg.png')}
+
 style={styles.sliderBack}
 />
 
