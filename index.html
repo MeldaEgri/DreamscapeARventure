@@ -4,22 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APK İndirme Sayfası</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h3, h4 {
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img {
+      width: auto;
+      height: 400px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .download-buttons {
+      margin-top: 20px;
+    }
+
+    .react-native-section {
+      margin-top: 40px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .react-native-section img {
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+  </style>
 </head>
 <body>
-  <h3>Uygulamamın APK'sını İndirin</h3>
-  <h4>Lütfen uygulama indirildiğinde kameraya görseli gösterin ve bir süre bekleyin. Canlanacaktır, bir 15 saniye beklemeniz gerekebilir.</h4>
+  <div class="container">
+    <h3>Uygulamamın APK'sını İndirin</h3>
+    <h4>Lütfen uygulama indirildiğinde kameraya görseli gösterin ve bir süre bekleyin. Canlanacaktır, bir 15 saniye beklemeniz gerekebilir.</h4>
 
-  <!-- Yerel görseli ekleme -->
-<img src="asalSayılar.jpeg" alt="APK İndir Görseli" style="width: auto; height: 200px;">
-  
-  <a href="https://www.mediafire.com/file/v2nivwjdpituwq7/DreamScape.apk/file" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Media Fire ile APK İndir
-    </button>
+    <!-- Yerel görseli ekleme -->
+    <img src="asalSayılar.jpeg" alt="APK İndir Görseli">
+
+    <div class="download-buttons">
+      <!-- APK indirme butonları -->
+      <a href="https://www.mediafire.com/file/v2nivwjdpituwq7/DreamScape.apk/file" target="_blank">
+        <button>Media Fire ile APK İndir</button>
+      </a>
+
       <a href="https://drive.google.com/file/d/1meSImbrO1Whd4mKcc26rrWVVbagXgjWd/view?usp=drive_link" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; background-color: yellow; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Driver ile APK İndir
-    </button>
-  </a>
+        <button style="background-color: yellow; color: black;">Drive ile APK İndir</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- React Native görselleri eklemek için alan -->
+  <div class="react-native-section">
+    <h3>React Native Uygulamanın Görselleri</h3>
+    <img src="reactNativeApp1.jpg" alt="React Native Görsel 1">
+    <img src="reactNativeApp2.jpg" alt="React Native Görsel 2">
+    <p>Bu görseller React Native ile geliştirdiğim uygulamanın arayüzüne aittir.</p>
+  </div>
+
 </body>
 </html>
